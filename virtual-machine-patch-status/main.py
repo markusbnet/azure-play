@@ -49,8 +49,6 @@ def get_patches(rgs):
             vms = compute_client.virtual_machines.list(group)
             for vm in vms:
                 try:
-
-                    print(sub)
                     patches = compute_client.virtual_machines.begin_assess_patches(
                         group, vm.name
                     )
