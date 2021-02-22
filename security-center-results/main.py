@@ -10,8 +10,6 @@ client_id = os.environ["ARM_CLIENT_ID"]
 secret = os.environ["ARM_CLIENT_SECRET"]
 tenant = os.environ["TENANT_ID"]
 
-print("here")
-
 CREDENTIALS = ClientSecretCredential(
     client_id=client_id, client_secret=secret, tenant_id=tenant,
 )
